@@ -1,0 +1,7 @@
+.description {
+  @include font(16px, 26px, 0.02em, 400);
+}
+
+.description--dark-theme {
+  color: var(--dark-theme-text-color);
+}

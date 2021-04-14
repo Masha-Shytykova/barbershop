@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Барбершоп</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+      integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="">
+          <svg width="69" height="55">
+            <use href="./images/symbol-defs.svg#icon-Logo"></use>
+          </svg>
+        </a>
+        <button class="burger__button" type="button" data-menu-button>
+          <svg
+            class="burger__icon-menu"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu is" data-menu>
+        <div class="mobile-menu__backdrop"></div>
+        <div class="mobile-menu__menu">
+          <button class="mobile-menu__btn-close" type="button" data-menu-close>
+            <svg
+              class="mobile-menu__icon-close"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="">О нас</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="">Услуги и цены</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="">Мастера</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="">Контакты</a>
+            </li>
+          </ul>
+          <a class="mobile-menu__tel link" href="tel:+380441111111"
+            >+38 044 111 11 11</a
+          >
+          <button class="mobile-menu__btn-modal btn" type="button">
+            онлайн-запись
+          </button>
+          <ul class="social-links list">
+            <li class="social-links__item social-links__item--first">
+              <a class="social-links__link link" href="">Instagram</a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link link" href="">Youtube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__left-side">
+            <ul class="social-links list">
+              <li class="social-links__item social-links__item--first">
+                <a class="social-links__link link" href="">Instagram</a>
+              </li>
+              <li class="social-links__item">
+                <a class="social-links__link link" href="">Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="hero__right-side">
+            <p class="subtitle subtitle--dark-theme hero__subtitle" lang="en">
+              A hair salon for men in Kyiv
+            </p>
+            <h1 class="hero__title">BarberShop</h1>
+            <p class="description description--dark-theme hero__description">
+              Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно
+              и со вкусом.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
